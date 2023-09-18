@@ -40,6 +40,8 @@ void consumeXY(){
 	while(1)
 	{
 		int lockResult = std::try_lock(m1 , m2);
+		if(lockResult != -1)
+		//cout << "REEEEEE : " << lockResult << endl;
 		if(lockResult == -1)
 		{
 			if (X != 0 && Y !=0){
