@@ -3,7 +3,7 @@
 //				Sleep															wait
 //  SLEEP IS:															WAIT IS:
 //  "I am done with my timeslice, and please don't						"I am done with my timeslice, Dont give me a another timeslice until someone calls notify_one() or notify_all()"
-//  give me another one for at least m miliseconds"						As with slee(), The OS won't even try to schedule your task unless someone calls notify() or notify_all() 
+//  give me another one for at least m miliseconds"						As with sleep(), The OS won't even try to schedule your task unless someone calls notify() or notify_all() 
 //  The OS doesn't even try to schedule the sleeping 					(or a few other wakeup scenarios occurs)
 //  thread until requested time has passed.
 
