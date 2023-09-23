@@ -21,6 +21,7 @@ void thread1()
 }
 void thread2()
 {
+	
 	m2.lock();
 //// to see deadlock uncomment std::this_thread::sleep_for(std::chrono::seconds(1));
 	m1.lock();
@@ -32,6 +33,7 @@ void thread2()
 }
 int main()
 {
+	
 	std::thread t1(thread1);
 	std::thread t2(thread2);
 	
