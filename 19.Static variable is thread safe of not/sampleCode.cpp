@@ -1,4 +1,4 @@
-
+// static is not thread safe
 #include <iostream>
 #include <thread>
 #include <mutex>
